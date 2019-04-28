@@ -6,9 +6,7 @@
 </template>
 
 <script>
-
-
-import { _throttle } from '../components/HelloWorld'
+import _ from 'lodash'
 export default {
   name: 'HelloWorld',
   props: {
@@ -25,12 +23,11 @@ export default {
   watch: {
     'search.input': {
       handler (value) {
-        this.timer = null
         if (this.timer) {
           clearTimeout(this.timer)
         }
-        timer = setTimeout(() => {
-          this.getList;
+        this.timer = setTimeout(() => {
+          this.getList();
         }, 1000)
 
       },

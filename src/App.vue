@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">防抖</router-link> |
-      <router-link to="/about">节流</router-link>
+      <router-link to="/">节流</router-link> 
     </div>
     <router-view/>
   </div>
